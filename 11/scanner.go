@@ -1,7 +1,7 @@
 package main
 
 import (
-	"bufio"
+	//"bufio"
 	"fmt"
 	"io"
 	"os"
@@ -33,7 +33,9 @@ func main() {
 	defer fin.Close()
 	
 	lines := readStringsByChar(fin)
-	fmt.Println(len(lines))
+	for i, line := range lines {
+		fmt.Println(i, line)	
+	}
 	
 	
 	/*
